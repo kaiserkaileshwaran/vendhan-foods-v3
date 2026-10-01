@@ -1,0 +1,6 @@
+{
+  "name": "Vendhan",
+  "description": "Vendhan - Pure traditional Indian millet foods, health mixes, handmade cookies, laddoos, and authentic podis from Erode, Tamil Nadu.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

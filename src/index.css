@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --color-leaf-900: #0f271c;
+  --color-leaf-800: #183e2d;
+  --color-leaf-700: #20503a;
+  --color-leaf-600: #2b684c;
+  --color-leaf-50: #f2f7f4;
+  --color-millet-900: #381f12;
+  --color-millet-800: #522d1b;
+  --color-millet-700: #6f3e26;
+  --color-millet-600: #8d4f30;
+  --color-terracotta-700: #8c321d;
+  --color-terracotta-600: #a73c23;
+  --color-gold-600: #b5832a;
+  --color-gold-500: #cfa049;
+  --color-cream-50: #faf7f2;
+  --color-cream-100: #f4eee3;
+  --color-cream-200: #e8ded0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  background-color: #faf7f2;
+  color: #29221c;
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+/* Custom scrollbars */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Subtle continuous marquee animation */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 35s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Grain texture overlay */
+.bg-grain {
+  background-image: radial-gradient(rgba(45, 25, 12, 0.04) 1px, transparent 0);
+  background-size: 24px 24px;
+}
